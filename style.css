@@ -17,7 +17,6 @@
 	--color-primary-text: hsl(238, 29%, 16%);
 	--color-secondary-text: hsl(237, 12%, 33%);
 	--color-tertiary-text: hsl(240, 6%, 50%);
-	--color-arrow: hsl(14, 88%, 65%);
 	--color-divider: hsl(240, 5%, 91%);
 	--color-bg-gradient-top: hsl(273, 75%, 66%);
 	--color-bg-gradient-bottom: hsl(240, 73%, 65%);
@@ -165,7 +164,7 @@ button {
 .woman-desktop, .patern-desktop{
 	display: block;
 	position: absolute;
-}	
+}
 
 
 .img{
@@ -188,10 +187,14 @@ top: 185px;
 	.faq{
 	width: 50%;
 	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	align-content: flex-start;
+	align-items: flex-start;
+	justify-content: center;
 	padding: 1rem;
+	}
+	.title{
+		padding: 1rem 0 0 1rem;
+		justify-content: center;
+	
 	}
 }
 /* Active */
