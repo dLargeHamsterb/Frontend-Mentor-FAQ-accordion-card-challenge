@@ -170,8 +170,8 @@ button {
 .img{
 	width: 50%;
 	height: 100%;
-	background-image: url(/images/illustration-woman-online-desktop.svg),
-	url(/images/bg-pattern-desktop.svg);
+	background-image: url(images/illustration-woman-online-desktop.svg),
+	url(images/bg-pattern-desktop.svg);
 	background-repeat: no-repeat, no-repeat;
 	background-position: left -80px center, left -570px top -290px;
 	position: relative;

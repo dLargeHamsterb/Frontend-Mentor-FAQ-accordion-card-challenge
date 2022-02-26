@@ -19,7 +19,6 @@ const questionList = [
 		questionTitle: "Do you provide additional support?",
 		questionAnswer: " Chat and email support is available 24/7. Phone lines are open during normal business hours."
 	}
-		   
 ]
 const questions = document.querySelector(".questions")
 
