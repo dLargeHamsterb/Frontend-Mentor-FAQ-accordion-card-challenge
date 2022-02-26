@@ -24,7 +24,7 @@ const questionList = [
 const questions = document.querySelector(".questions")
 
 
-//////// Load Question/////////////
+////// Load Question/////////////
 window.addEventListener("DOMContentLoaded", function(){
 	let displayQuestion = questionList.map(function(item){
 		return `<div class="question">
@@ -37,16 +37,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	});
 	displayQuestion = displayQuestion.join(" ");
 	questions.innerHTML = displayQuestion;
-	
-})
 ////////////// Show Answer //////////
-const question = document.querySelectorAll(".question")
-console.log(question)
-question.forEach(function(question){
+const show = document.querySelectorAll(".question")
+
+show.forEach(function(question){
 const btn = question.querySelector(".question-title")
 	btn.addEventListener('click',function(){
 
-		question.forEach(function (item){
+		show.forEach(function (item){
 			if (item !== question){
 				item.classList.remove("show-text");
 				item.classList.remove("active");
@@ -55,6 +53,8 @@ const btn = question.querySelector(".question-title")
 		question.classList.toggle("active");
 		question.classList.toggle("show-text");
 	});
+})
+
 })
 
 
