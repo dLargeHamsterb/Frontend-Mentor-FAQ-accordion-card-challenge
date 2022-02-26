@@ -21,7 +21,7 @@ const questionList = [
 	}
 		   
 ]
-const question = document.querySelector(".faq")
+const questions = document.querySelector(".questions")
 
 
 //////// Load Question/////////////
@@ -36,17 +36,17 @@ window.addEventListener("DOMContentLoaded", function(){
 		</div>`
 	});
 	displayQuestion = displayQuestion.join(" ");
-	question.innerHTML = displayQuestion;
+	questions.innerHTML = displayQuestion;
 	
 })
 ////////////// Show Answer //////////
-const questions = document.querySelectorAll(".question")
-
-questions.forEach(function(question){
+const question = document.querySelectorAll(".question")
+console.log(question)
+question.forEach(function(question){
 const btn = question.querySelector(".question-title")
 	btn.addEventListener('click',function(){
 
-		questions.forEach(function (item){
+		question.forEach(function (item){
 			if (item !== question){
 				item.classList.remove("show-text");
 				item.classList.remove("active");
