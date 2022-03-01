@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		return `<div class="question">
 		<div class="question-title">
 		<p>${item.questionTitle}</p>
-		<button class="question-btn"><img src="/images/icon-arrow-down.svg"></button>
+		<button class="question-btn"><img src="images/icon-arrow-down.svg"></button>
 	  </div>
 		<p class="question-answer">${item.questionAnswer}</p>
 		</div>`

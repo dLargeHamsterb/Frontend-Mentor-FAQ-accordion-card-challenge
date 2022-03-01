@@ -7,7 +7,6 @@
 }
 :root {
 
-  
 	/**************  Variables  **************/
 	--font-family-base: "Kumbh Sans", sans-serif;
 	--font-weight-regular: 400;
@@ -71,6 +70,7 @@ body{
   height: auto;
   justify-self: center;
   display: content;
+  z-index: -1;
 }
 .woman-desktop, .patern-desktop , .box-img{
 display: none;
@@ -145,7 +145,7 @@ button {
 	width: 1rem;
 }
 /* Layout desktop */
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
 	.wrapper{
 	min-width: 1000px;
 	height: 500px;
@@ -153,7 +153,7 @@ button {
     box-shadow: var(--card-box-shadow);
     display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -188,8 +188,7 @@ top: 185px;
 	width: 50%;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
-	padding: 1rem;
+	padding: 4rem 1rem;
 	}
 	.title{
 		padding: 1rem 0 0 1rem;
